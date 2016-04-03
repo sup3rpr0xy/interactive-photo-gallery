@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Interactive Photo Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>My Photo Gallery</h1>
+    </div>
+  </div>
+  
+  <div class="search">
+    <div class="container">
+      <form>
+        <label>Search: </label>
+        <input type="text" name="search">
+      </form>
+    </div>
+  </div>
+  
+  <div class="images">
+    <div class="container">
+      <ul id="imageGallery">
+        <li><a class="fancybox" rel="group" href="images/01.jpg"><img src="images/thumbnails/01.jpg" alt="Image 1"></a></li>
+        <li><a class="fancybox" rel="group" href="images/02.jpg"><img src="images/thumbnails/02.jpg" alt="Image 2"></a></li>
+        <li><a class="fancybox" rel="group" href="images/03.jpg"><img src="images/thumbnails/03.jpg" alt="Image 3"></a></li>
+        <li><a class="fancybox" rel="group" href="images/04.jpg"><img src="images/thumbnails/04.jpg" alt="Image 4"></a></li>
+        <li><a class="fancybox" rel="group" href="images/05.jpg"><img src="images/thumbnails/05.jpg" alt="Image 5"></a></li>
+        <li><a class="fancybox" rel="group" href="images/06.jpg"><img src="images/thumbnails/06.jpg" alt="Image 6"></a></li>
+        <li><a class="fancybox" rel="group" href="images/07.jpg"><img src="images/thumbnails/07.jpg" alt="Image 7"></a></li>
+        <li><a class="fancybox" rel="group" href="images/08.jpg"><img src="images/thumbnails/08.jpg" alt="Image 8"></a></li>
+        <li><a class="fancybox" rel="group" href="images/09.jpg"><img src="images/thumbnails/09.jpg" alt="Image 9"></a></li>
+        <li><a class="fancybox" rel="group" href="images/10.jpg"><img src="images/thumbnails/10.jpg" alt="Image 10"></a></li>
+        <li><a class="fancybox" rel="group" href="images/11.jpg"><img src="images/thumbnails/11.jpg" alt="Image 11"></a></li>
+        <li><a class="fancybox" rel="group" href="images/12.jpg"><img src="images/thumbnails/12.jpg" alt="Image 12"></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Add jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+  
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+  
+  <!-- My own app.js file -->
+  <script src="js/app.js"></script>
+</body>
+</html>
