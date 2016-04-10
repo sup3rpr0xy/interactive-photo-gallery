@@ -5,6 +5,7 @@ $(document).ready(function() {
     $(this).attr('data-search-term', $(this).text().toLowerCase());
   });
 
+  //Getting the value of the search box
   $('.live-search-box').on('keyup', function(){
 
   var searchTerm = $(this).val().toLowerCase();

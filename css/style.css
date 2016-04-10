@@ -15,6 +15,10 @@ html {
   text-align: center;
 }
 
+a {
+  font-size: 0;
+}
+
 /* ============================
     Search Section
 ============================ */
