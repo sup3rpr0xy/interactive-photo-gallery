@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
   <title>Interactive Photo Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen"/>
 </head>
 <body>
   <div class="header">
@@ -26,18 +30,18 @@
   <div class="images">
     <div class="container">
       <ul id="imageGallery" class="live-search-list">
-        <li><a class="fancybox" rel="group" href="images/01.jpg" title="Morning Stroking"><img src="images/thumbnails/01.jpg" alt="Image1">Morning Stroking</a></li>
-        <li><a class="fancybox" rel="group" href="images/02.jpg" title="Feeling Good About Myself"><img src="images/thumbnails/02.jpg" alt="Image2">Feeling Good About Myself</a></li>
-        <li><a class="fancybox" rel="group" href="images/03.jpg" title="Love That Feeling. Oooohh"><img src="images/thumbnails/03.jpg" alt="Image3">Love That Feeling. Oooohh</a></li>
-        <li><a class="fancybox" rel="group" href="images/04.jpg" title="You Caught Me"><img src="images/thumbnails/04.jpg" alt="Imag 4">You Caught Me</a></li>
-        <li><a class="fancybox" rel="group" href="images/05.jpg" title="Let's Play Hide 'n Seek"><img src="images/thumbnails/05.jpg" alt="Image 5">Let's Play Hide 'n Seek</a></li>
-        <li><a class="fancybox" rel="group" href="images/06.jpg" title="Oh Yeah Baby!"><img src="images/thumbnails/06.jpg" alt="Image 6">Oh Yeah Baby!</a></li>
-        <li><a class="fancybox" rel="group" href="images/07.jpg" title="Do That Again"><img src="images/thumbnails/07.jpg" alt="Image 7">Do That Again</a></li>
-        <li><a class="fancybox" rel="group" href="images/08.jpg" title="I'm Feeling It"><img src="images/thumbnails/08.jpg" alt="Image 8">I'm Feeling It</a></li>
-        <li><a class="fancybox" rel="group" href="images/09.jpg" title="Early Morning Sunrise"><img src="images/thumbnails/09.jpg" alt="Image 9">Early Morning Sunrise</a></li>
-        <li><a class="fancybox" rel="group" href="images/10.jpg" title="Let's Get Down To Business"><img src="images/thumbnails/10.jpg" alt="Image 10">Let's Get Down To Business</a></li>
-        <li><a class="fancybox" rel="group" href="images/11.jpg" title="Sweet Nothing"><img src="images/thumbnails/11.jpg" alt="Image 11">Sweet Nothing</a></li>
-        <li><a class="fancybox" rel="group" href="images/12.jpg" title="Stroking Sensation"><img src="images/thumbnails/12.jpg" alt="Image 12">Stroking Sensation</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/01.jpg" title="Morning Stroking"><img src="images/thumbnails/01.jpg" alt="Image1">Morning Stroking</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/02.jpg" title="Feeling Good About Myself"><img src="images/thumbnails/02.jpg" alt="Image2">Feeling Good About Myself</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/03.jpg" title="Love That Feeling. Oooohh"><img src="images/thumbnails/03.jpg" alt="Image3">Love That Feeling. Oooohh</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/04.jpg" title="You Caught Me"><img src="images/thumbnails/04.jpg" alt="Imag 4">You Caught Me</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/05.jpg" title="Let's Play Hide 'n Seek"><img src="images/thumbnails/05.jpg" alt="Image 5">Let's Play Hide 'n Seek</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/06.jpg" title="Oh Yeah Baby!"><img src="images/thumbnails/06.jpg" alt="Image 6">Oh Yeah Baby!</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/07.jpg" title="Do That Again"><img src="images/thumbnails/07.jpg" alt="Image 7">Do That Again</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/08.jpg" title="I'm Feeling It"><img src="images/thumbnails/08.jpg" alt="Image 8">I'm Feeling It</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/09.jpg" title="Early Morning Sunrise"><img src="images/thumbnails/09.jpg" alt="Image 9">Early Morning Sunrise</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/10.jpg" title="Let's Get Down To Business"><img src="images/thumbnails/10.jpg" alt="Image 10">Let's Get Down To Business</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/11.jpg" title="Sweet Nothing"><img src="images/thumbnails/11.jpg" alt="Image 11">Sweet Nothing</a></li>
+        <li><a class="fancybox" data-fancybox-group="group" href="images/12.jpg" title="Stroking Sensation"><img src="images/thumbnails/12.jpg" alt="Image 12">Stroking Sensation</a></li>
       </ul>
     </div>
   </div>
@@ -49,15 +53,15 @@
   <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
   <!-- Add fancyBox -->
-  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  
   <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
 
   <!-- Optionally add helpers - button, thumbnail and/or media -->
-  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+  
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
   
-  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+  
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
   
   <!-- My own app.js file -->
